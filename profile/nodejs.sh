@@ -32,7 +32,7 @@ export NODE_ENV=${NODE_ENV:-production}
 
 echo "----setting oracle env vars----"
 export LD_LIBRARY_PATH=$HOME/.heroku/oracle/instantclient:${LD_LIBRARY_PATH:-}
-export OCI_LIB_DIR=$HOME/.heroku/oracle/instantclient
+export OCI_LIB_DIR=$HOME/.heroku/oracle/instantclient/sdk/lib/msvc
 export OCI_INC_DIR=$HOME/.heroku/oracle/instantclient/sdk/include
 echo "----/setting oracle env vars----"
 
