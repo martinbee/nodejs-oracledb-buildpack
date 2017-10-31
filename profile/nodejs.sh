@@ -31,6 +31,8 @@ export NODE_HOME="$HOME/.heroku/node"
 export NODE_ENV=${NODE_ENV:-production}
 
 echo "----setting oracle env vars----"
+echo "home path = $HOME"
+echo "ld library path = ${LD_LIBRARY_PATH:-}"
 export LD_LIBRARY_PATH=$HOME/.heroku/oracle/instantclient:${LD_LIBRARY_PATH:-}
 export OCI_LIB_DIR=$HOME/.heroku/oracle/instantclient
 export OCI_INC_DIR=$HOME/.heroku/oracle/instantclient/sdk/include
