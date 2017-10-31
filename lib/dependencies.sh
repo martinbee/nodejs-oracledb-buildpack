@@ -2,6 +2,7 @@ install_oracle_libraries(){
   echo $HOME
   local build_dir=${1:-}
   echo "Installing oracle libraries"
+  echo "build dir = $build_dir"
   mkdir -p $build_dir/oracle
   cd $build_dir/oracle
   local basic_download_url="https://transfer.sh/xWc2U/instantclient-basiclite.zip"
