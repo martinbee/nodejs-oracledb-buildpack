@@ -19,7 +19,7 @@ install_oracle_libraries(){
   unzip instantclient-sdk.zip
    echo "unzipping libraries 2nd-one"
      echo "after download sdk $(ls -ltr)"
-  mv instantclient_12_1 instantclient
+  mv instantclient_12_2 instantclient
   echo "moved instantclient_12_1 to instantclient"
   cd instantclient
   echo "change dir to instantclient"
