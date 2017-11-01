@@ -11,11 +11,14 @@ install_oracle_libraries(){
   echo "Downloaded [$basic_download_url]"
   curl -k "$sdk_download_url" --silent --fail --retry 5 --retry-max-time 150 -o instantclient-sdk.zip
   echo "Downloaded [$sdk_download_url]"
+  
   echo "unzipping libraries"
-  unzip -d instantclient-basic.zip
+  echo "after download basic $(ls -ltr)"
+  unzip instantclient-basic.zip
    echo "unzipping libraries-1st one"
-  unzip -d instantclient-sdk.zip
+  unzip instantclient-sdk.zip
    echo "unzipping libraries 2nd-one"
+     echo "after download sdk $(ls -ltr)"
   mv instantclient_12_1 instantclient
   echo "moved instantclient_12_1 to instantclient"
   cd instantclient
