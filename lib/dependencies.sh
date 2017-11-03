@@ -13,16 +13,10 @@ install_oracle_libraries(){
   echo "Downloaded [$sdk_download_url]"
   
   echo "unzipping libraries"
-  echo "after download basic $(ls -ltr)"
-  unzip instantclient-basic.zip
-   echo "unzipping libraries-1st one"
-  unzip instantclient-sdk.zip
-   echo "unzipping libraries 2nd-one"
-     echo "after download sdk $(ls -ltr)"
+   unzip instantclient-basic.zip
+   unzip instantclient-sdk.zip
   mv instantclient_12_2 instantclient
-  echo "moved instantclient_12_2 to instantclient"
   cd instantclient
-  echo "change dir to instantclient"
   ln -s libclntsh.so.12.1 libclntsh.so
 }
 
