@@ -5,8 +5,8 @@ install_oracle_libraries(){
   echo "build dir = $build_dir"
   mkdir -p $build_dir/oracle
   cd $build_dir/oracle
-  local basic_download_url="https://github.aig.net/lkommava/oracle-basiclient/raw/master/instantclient-basic.zip"
-  local sdk_download_url="https://github.aig.net/lkommava/oracle-sdk/raw/master/instantclient-sdk.zip"
+  local basic_download_url="https://transfer.sh/xWc2U/instantclient-basiclite.zip"
+  local sdk_download_url="https://transfer.sh/9dzwj/instantclient-sdk.zip"
   curl -LOk "$basic_download_url"
   echo "Downloaded [$basic_download_url]"
   curl -LOk "$sdk_download_url"
